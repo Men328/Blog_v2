@@ -5,11 +5,11 @@ updated: "2025-05-05"
 categories:
   - "hệ thống phân tán"
   - "kiến trúc"
-coverImage: "/images/architecture-distributed-system.jpg"
+coverImage: "/images/jefferson-santos-fCEJGBzAkrU-unsplash.jpg"
 coverWidth: 16
 coverHeight: 9
 excerpt: Khám phá các mô hình kiến trúc của hệ thống phân tán trong bài viết này.
-author: "Trần Thị MếnMến"
+author: "Trần Thị Mến"
 ---
 
 ## Tổng quan về Kiến trúc Hệ thống Phân tán
