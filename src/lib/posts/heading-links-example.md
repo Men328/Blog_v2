@@ -1,35 +1,39 @@
 ---
-title: "Automatic heading links in mdsvex"
-date: "2023-10-26"
-updated: "2023-10-26"
+title: "Kiến trúc của Hệ thống Phân tán"
+date: "2025-05-05"
+updated: "2025-05-05"
 categories:
-  - "sveltekit"
-  - "markdown"
-coverImage: "/images/jefferson-santos-fCEJGBzAkrU-unsplash.jpg"
+  - "hệ thống phân tán"
+  - "kiến trúc"
+coverImage: "/images/architecture-distributed-system.jpg"
 coverWidth: 16
 coverHeight: 9
-excerpt: Check out how heading links work with this starter in this post.
+excerpt: Khám phá các mô hình kiến trúc của hệ thống phân tán trong bài viết này.
+author: "Trần Thị MếnMến"
 ---
 
-Here are some headings:
+## Tổng quan về Kiến trúc Hệ thống Phân tán
 
-## Here's an h2
+Hệ thống phân tán là một cấu trúc phức tạp bao gồm nhiều máy tính làm việc cùng nhau để thực hiện các nhiệm vụ chung. Kiến trúc của hệ thống này rất đa dạng và phụ thuộc vào yêu cầu cụ thể của ứng dụng.
 
-Lorem ipsum dolor sit amet
+## Các mô hình kiến trúc chính
 
-### This is an h3
+### 1. Kiến trúc Client-Server
 
-Lorem ipsum dolor sit amet
+Trong mô hình này, máy khách gửi yêu cầu đến máy chủ, nơi xử lý và trả về kết quả. Đây là mô hình phổ biến trong nhiều ứng dụng web.
 
-#### As you've probably guessed, this is an h4
+### 2. Kiến trúc Peer-to-Peer
 
-Lorem ipsum dolor sit amet
+Mỗi nút trong mạng có thể hoạt động như máy khách hoặc máy chủ. Mô hình này thường được sử dụng trong các ứng dụng chia sẻ tệp và giao tiếp trực tiếp.
 
-##### This, of course, is an h5
+### 3. Kiến trúc Microservices
 
-Lorem ipsum dolor sit amet
+Kiến trúc này chia ứng dụng thành các dịch vụ nhỏ, độc lập, có thể triển khai và mở rộng riêng biệt. Mỗi dịch vụ thực hiện một nhiệm vụ cụ thể và giao tiếp thông qua API.
 
-###### We're deep in h6 territory now
+## Ví dụ về Kiến trúc Hệ thống Phân tán
 
-Lorem ipsum dolor sit amet
+Một ví dụ điển hình là Netflix, nơi mà các dịch vụ như xử lý video, thanh toán và quản lý người dùng hoạt động độc lập nhưng kết hợp lại để cung cấp trải nghiệm người dùng mượt mà.
 
+## Kết luận
+
+Hiểu rõ về các mô hình kiến trúc của hệ thống phân tán giúp chúng ta thiết kế và triển khai các ứng dụng hiệu quả, linh hoạt và dễ mở rộng.
