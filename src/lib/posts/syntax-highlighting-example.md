@@ -1,65 +1,39 @@
 ---
-title: "Syntax highlighting with mdsvex"
-date: "2023-01-05"
-updated: "2023-01-05"
+title: "Kiến trúc của Hệ thống Phân tán"
+date: "2025-05-05"
+updated: "2025-05-05"
 categories:
-  - "sveltekit"
-  - "web"
-  - "css"
-  - "markdown"
+  - "hệ thống phân tán"
+  - "kiến trúc"
 coverImage: "/images/linus-nylund-Q5QspluNZmM-unsplash.jpg"
 coverWidth: 16
 coverHeight: 9
-excerpt: This post shows you how syntax highlighting works here.
+excerpt: Khám phá các mô hình kiến trúc của hệ thống phân tán trong bài viết này.
+author: "Trần Thị Mến"
 ---
 
-mdsvex has automatic, built-in syntax highlighting with [Prism.js](https://prismjs.com/); just include the language name after the triple backticks, like so:
+## Tổng quan về Kiến trúc Hệ thống Phân tán
 
-```
-\```css
-/* Your CSS here */
-\```
-```
+Hệ thống phân tán là một cấu trúc phức tạp bao gồm nhiều máy tính làm việc cùng nhau để thực hiện các nhiệm vụ chung. Kiến trúc của hệ thống này rất đa dạng và phụ thuộc vào yêu cầu cụ thể của ứng dụng.
 
-And that will render just like so:
+## Các mô hình kiến trúc chính
 
-```css
-.my-css-class {
-	color: #ffd100;
-	box-sizing: border-box;
-	/* etc... */
-}
-```
+### 1. Kiến trúc Client-Server
 
-Here's how you'd do JavaScript:
+Trong mô hình này, máy khách gửi yêu cầu đến máy chủ, nơi xử lý và trả về kết quả. Đây là mô hình phổ biến trong nhiều ứng dụng web.
 
-```
-\```js
-// You can use js or javascript for the language
-\```
-```
+### 2. Kiến trúc Peer-to-Peer
 
-Highlighted code sample:
-```js
-const invertNumberInRange = (num, range) => {
-	return range - num;
-}
+Mỗi nút trong mạng có thể hoạt động như máy khách hoặc máy chủ. Mô hình này thường được sử dụng trong các ứng dụng chia sẻ tệp và giao tiếp trực tiếp.
 
-invertNumberInRange(25, 100); // 75
-```
+### 3. Kiến trúc Microservices
 
-Of course, mdsvex supports Svelte highlighting, too:
+Kiến trúc này chia ứng dụng thành các dịch vụ nhỏ, độc lập, có thể triển khai và mở rộng riêng biệt. Mỗi dịch vụ thực hiện một nhiệm vụ cụ thể và giao tiếp thông qua API.
 
-```svelte
-<script>
-	import myComponent from '$lib/components/myComponent.svelte';
+## Ví dụ về Kiến trúc Hệ thống Phân tán
 
-	export let myProp = undefined;
-</script>
+Một ví dụ điển hình là Netflix, nơi mà các dịch vụ như xử lý video, thanh toán và quản lý người dùng hoạt động độc lập nhưng kết hợp lại để cung cấp trải nghiệm người dùng mượt mà.
 
-<div>
-	<MyComponent prop={myProp}>
-</div>
-```
+## Kết luận
 
-All these colors are in `src/lib/assets/css/prism.css`, if you'd like to change them.
+Hiểu rõ về các mô hình kiến trúc của hệ thống phân tán giúp chúng ta thiết kế và triển khai các ứng dụng hiệu quả, linh hoạt và dễ mở rộng.
